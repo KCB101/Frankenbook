@@ -1,0 +1,87 @@
+Bill Of Materials
+"Report Written:","Friday, April 18, 2025"
+"Project Path:","D:\Userdata\Documents\Laptop\01 PCB Design\02 External Ports\rev. 05\Laptop.prj"
+"Design Path:","D:\Userdata\Documents\Laptop\01 PCB Design\02 External Ports\rev. 05\Laptop.pcb"
+"Design Title:",""
+"Created:","14.09.2023 00:17:33"
+"Last Saved:","24.11.2024 23:31:29"
+"Editing Time:","17546 min"
+"Units:","mm (precision 3)"
+
+
+"Components on Top Side"
+
+
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R1",,"1k",,,,1
+"Sub-total:",,,,,,1
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C_F5-8",,,"10nf","35V",,4
+"C_TX1-6, C_TX9-10",,,"0.1uf","16V",,8
+"C_X3-4",,,"16pf",,,2
+"IC_H","USB5744T-I/2G",,,,,1
+"J2",6-2301994-1,,,,,1
+"J_UC1, J_UI1","12401598E4#2A",,,,,2
+"J_UC2",,,,,,1
+"J_UP1-3",48405-0003,,,,,3
+"R_H1",,"100k",,,,1
+"R_H2",,"50k",,,,1
+"R_H3",,"12k",,,,1
+"R_UI1",,"5.1k",,,,1
+"R_X1",,"1M",,,,1
+"Y1","ECS-250-10-37B2-CKM-TR",,,,,1
+"Sub-total:",,,,,,28
+
+"Totals for Top Side"
+
+,,,,,,"Quantity"
+,,,,,,29
+
+"Components on Bottom Side"
+
+
+
+"Capacitors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C1-9, C13-14",,,"0.1uf","16V",,11
+"C10-12","GRM31CR61A107MEA8L",,"100uf","10V",,3
+"Sub-total:",,,,,,14
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C_F1-4",,,"10nf","35V",,4
+"C_F9-11, C_F13",,,"1nf","16V",,4
+"C_F12, C_F14, C_L2-3, C_U1-4, C_U9-13",,,"0.1uf","16V",,13
+"C_P1-3",,,"10uf","10v",,3
+"C_U5-8","GRM31CR61A107MEA8L",,"100uf","10V",,4
+"C_X1-2",,,"16pf",,,2
+"IC1","MPM3810GQB-12-Z",,,,,1
+"IC2","MPM3810GQB-33-Z",,,,,1
+"IC_L","XR22801IL32TR-F",,,,,1
+"J_U1-4","AP22653FDZ-7",,,,,4
+"R_H4",,"1k",,,,1
+"R_L1",,"50k",,,,1
+"R_L2",,"226R",,,,1
+"R_U1-4",,"27k",,,,4
+"R_U5-8",,"Dont Place",,,,4
+"R_X2",,"1M",,,,1
+"Y_X1","ECS-250-10-37B2-CKM-TR",,,,,1
+"Sub-total:",,,,,,50
+
+"Totals for Bottom Side"
+
+,,,,,,"Quantity"
+,,,,,,64
+
+"Grand Totals"
+
+,,,,,,"Quantity"
+,,,,,,93

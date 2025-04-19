@@ -1,0 +1,3 @@
+path: /lib/systemd/system-sleep
+This script turns of the power to all the port where apple devices are connected to (mainly for the trackpad/keyboard as it pulls a lot of power which adds up fast during sleep mode).
+The rule works by finding the ports all the devices are connected to and then turns the power to them of (only works if port power control is supported on that port).

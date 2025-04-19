@@ -1,0 +1,67 @@
+#!/bin/bash
+
+# Define the vendor and product (device) IDs
+Vendor_MCT="0424"  # 05ac for apple
+Product_2744="2744" # 0237 for macbook trackpad
+Vendor_Apple="05ac"  # 05ac for apple
+Product_Trackpad="0237" # 0237 for macbook trackpad
+Product_All="0000"
+
+
+# Path to the USB device to be disabled
+DEVICE_PATH="/sys/bus/usb/devices"
+
+
+# Function to disable USB devices based on vendor and product ID
+usb_statechanger() {
+    local writeval=$1
+    local Vendor=$2
+    local Product=$3
+    # Find all USB device paths based on Vendor ID and Product ID
+    PATH_LIST=$(find $DEVICE_PATH)
+    for DEVICE in $PATH_LIST; do
+        if [ -e "$DEVICE/idVendor" ]; then
+            Value="$(cat $DEVICE/idVendor)"
+            if [ "$Value" = $Vendor ]; then
+                if [ -e "$DEVICE/idProduct" ]; then
+                    Value="$(cat $DEVICE/idProduct)"
+                    if [ "$Value" = $Product ] || [ "$Product_All" = $Product ]; then
+                        Value="$(cat $DEVICE/bConfigurationValue)"
+                        echo "$writeval" | tee $DEVICE/bConfigurationValue
+                    fi
+                fi
+            fi
+        fi
+    done
+}
+
+if [ 1 = 0 ]; then
+    usb_statechanger 0 $Vendor_Apple $Product_All
+    sleep 0.1
+    usb_statechanger 0 $Vendor_MCT $Product_2744
+    sleep 1
+    usb_statechanger 1 $Vendor_MCT $Product_2744
+    sleep 0.1
+    usb_statechanger 1 $Vendor_Apple $Product_All
+    sleep 0.1
+    usb_statechanger 1 $Vendor_Apple $Product_All
+fi
+
+case "$1" in
+    pre)
+        # Turning off USB hub before suspend
+        usb_statechanger 0 $Vendor_Apple $Product_All
+        sleep 0.1
+        usb_statechanger 0 $Vendor_MCT $Product_2744
+        ;;
+    post)
+        # Optionally, turn USB hub back on after resume
+        usb_statechanger 1 $Vendor_MCT $Product_2744
+        # sleep 0.1
+        # usb_statechanger 0 $Vendor_Apple $Product_All
+        # sleep 0.1
+        # usb_statechanger 1 $Vendor_Apple $Product_All
+        ;;
+esac
+
+exit 0

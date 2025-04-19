@@ -1,0 +1,85 @@
+Bill Of Materials
+"Report Written:","Friday, April 18, 2025"
+"Project Path:","D:\Userdata\Documents\Laptop\01 PCB Design\03 Keyboard Handler\Rev. 03\Laptop3.prj"
+"Design Path:","D:\Userdata\Documents\Laptop\01 PCB Design\03 Keyboard Handler\Rev. 03\Laptop3.pcb"
+"Design Title:",""
+"Created:","14.09.2023 00:17:33"
+"Last Saved:","28.08.2024 21:01:00"
+"Editing Time:","14745 min"
+"Units:","mm (precision 3)"
+
+
+"Components on Top Side"
+
+
+
+"Capacitors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C1",,,"1nf","25V",,1
+"Sub-total:",,,,,,1
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R1",,"220k",,,,1
+"R2",,"3.3k",,,,1
+"R3",,"1k",,,,1
+"Sub-total:",,,,,,3
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C_B1",,,"39PF","50V",,1
+"C_B2",,,"1uf","25V",,1
+"C_B3, C_L3",,,"2.2uf","10V",,2
+"C_B4, C_F1-2, C_L2",,,"0.1uf","16V",,4
+"C_F3-4",,,"100pf","50V",,2
+"C_F5-6, C_L1",,,"4.7uf","6.3V",,3
+"C_P",,,"0.1uf","10V",,1
+"D_18V5","B0520WS-7-F",,,,,1
+"IC_B","TPS61045DRBR",,,,,1
+"IC_L1","TLV76133DCYR",,,,,1
+"IC_M","CY8C24794-24LTXI",,,,,1
+"L_B","SRP4012CC-3R3M",,,,,1
+"R_B1",,"1M",,,,1
+"R_B2-3",,"71.5k",,,,2
+"R_K1",,"470R",,,,1
+"R_P",,"1k",,,,1
+"Sub-total:",,,,,,24
+
+"Totals for Top Side"
+
+,,,,,,"Quantity"
+,,,,,,28
+
+"Components on Bottom Side"
+
+
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R4-6",,"100k",,,,3
+"Sub-total:",,,,,,3
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"J1",208294-0040,,,,,1
+"J_K","FH12A-30S-0.5SH(55)",,,,,1
+"J_P",208294-0020,,,,,1
+"J_PR",,,,,,1
+"J_T",54722-0224,,,,,1
+"R_K2",,"10k",,,,1
+"Sub-total:",,,,,,6
+
+"Totals for Bottom Side"
+
+,,,,,,"Quantity"
+,,,,,,9
+
+"Grand Totals"
+
+,,,,,,"Quantity"
+,,,,,,37

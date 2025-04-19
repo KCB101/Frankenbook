@@ -1,0 +1,1 @@
+In this folder the rules necessary for the keyboard to work properly are placed.

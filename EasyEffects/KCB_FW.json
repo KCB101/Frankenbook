@@ -1,0 +1,82 @@
+{
+    "output": {
+        "bass_enhancer#0": {
+            "amount": 5.999999999999993,
+            "blend": -5.0,
+            "bypass": false,
+            "floor": 10.0,
+            "floor-active": true,
+            "harmonics": 10.0,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "scope": 250.0
+        },
+        "blocklist": [],
+        "exciter#0": {
+            "amount": 0.0,
+            "blend": 0.0,
+            "bypass": false,
+            "ceil": 15000.0,
+            "ceil-active": false,
+            "harmonics": 10.0,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "scope": 7500.0
+        },
+        "filter#1": {
+            "balance": 0.0,
+            "bypass": false,
+            "equal-mode": "IIR",
+            "frequency": 90.0,
+            "gain": 30.000000000000483,
+            "input-gain": -7.0,
+            "mode": "RLC (BT)",
+            "output-gain": 0.0,
+            "quality": 0.0,
+            "slope": "x1",
+            "type": "High-pass",
+            "width": 4.0
+        },
+        "filter#2": {
+            "balance": -6.38378239159465e-16,
+            "bypass": false,
+            "equal-mode": "IIR",
+            "frequency": 400.0,
+            "gain": 5.9999999999999165,
+            "input-gain": 0.0,
+            "mode": "RLC (BT)",
+            "output-gain": 0.0,
+            "quality": 0.0,
+            "slope": "x1",
+            "type": "Low-shelf",
+            "width": 1.0
+        },
+        "limiter#0": {
+            "alr": false,
+            "alr-attack": 5.0,
+            "alr-knee": 0.0,
+            "alr-release": 50.0,
+            "attack": 2.0,
+            "bypass": false,
+            "dithering": "None",
+            "external-sidechain": false,
+            "gain-boost": false,
+            "input-gain": 0.0,
+            "lookahead": 4.0,
+            "mode": "Herm Thin",
+            "output-gain": 0.0,
+            "oversampling": "Half x4(2L)",
+            "release": 8.0,
+            "sidechain-preamp": 0.0,
+            "stereo-link": 100.0,
+            "threshold": 0.0
+        },
+        "plugins_order": [
+            "filter#1",
+            "filter#2",
+            "bass_enhancer#0",
+            "exciter#0",
+            "limiter#0"
+        ]
+    }
+}

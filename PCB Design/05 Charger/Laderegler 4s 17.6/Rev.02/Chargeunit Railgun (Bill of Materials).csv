@@ -1,0 +1,82 @@
+Bill Of Materials
+"Report Written:","Friday, April 18, 2025"
+"Project Path:","D:\Userdata\Documents\Laptop\01 PCB Design\05 Charger\Laderegler 4s 17.6\Rev.02\Chargeunit Railgun.prj"
+"Design Path:","D:\Userdata\Documents\Laptop\01 PCB Design\05 Charger\Laderegler 4s 17.6\Rev.02\Chargeunit Railgun.pcb"
+"Design Title:",""
+"Created:","20.04.2024 00:01:16"
+"Last Saved:","17.09.2024 19:10:39"
+"Editing Time:","2207 min"
+"Units:","mm (precision 3)"
+
+
+"Components on Top Side"
+
+
+
+"Capacitors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C1-2, C9-10",,,"10n",,,4
+"C3-4, C6, C11, C15, C22",,,"1u",,,6
+"C5",,,"2.2u",,,1
+"C19",,,"2.2u",,,1
+"C20",,,,,,1
+"C21",,,"1u",,,1
+"Sub-total:",,,,,,14
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R1",,"33R",,,,1
+"R4-5",,"10k",,,,2
+"Sub-total:",,,,,,3
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"IC1","MAX1870AETJ+",,,,,1
+"Sub-total:",,,,,,1
+
+"Totals for Top Side"
+
+,,,,,,"Quantity"
+,,,,,,18
+
+"Components on Bottom Side"
+
+
+
+"Capacitors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C7-8, C14, C16-18",,,,,,6
+"Sub-total:",,,,,,6
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R2",,"R025",,,,1
+"R3",,"R035",,,,1
+"Sub-total:",,,,,,2
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"D5-8","SSA34HE3_A/I",,,,,4
+"F1-2","SF-0603SP800R-2",,,,,2
+"IC3","SI4564DY-T1-GE3",,,,,1
+"IC4","RT9058-33GV",,,,,1
+"J1, J4",208294-0040,,,,,2
+"J2",208294-0020,,,,,1
+"L2","CDRH104RNP-100NC",,,,,1
+"Sub-total:",,,,,,12
+
+"Totals for Bottom Side"
+
+,,,,,,"Quantity"
+,,,,,,20
+
+"Grand Totals"
+
+,,,,,,"Quantity"
+,,,,,,38

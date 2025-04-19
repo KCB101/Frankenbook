@@ -1,0 +1,2 @@
+Path: /lib/udev/rules.d
+This UDEV rule is necessary as after turning the power to the keyboard on and of the trackpad doesnt work. Restarting it fixes the issue.

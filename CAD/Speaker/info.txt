@@ -1,0 +1,3 @@
+The speakers used are AS03404MO-SP34. In each speaker two pairs of two drivers in series are in parallel.
+
+The two speakers are just mirrored. 

@@ -1,0 +1,4 @@
+Needs pullup on highside pmos
+add capacitors to mos gates to increase resiliance 
+add input filter
+button bad, too shallow

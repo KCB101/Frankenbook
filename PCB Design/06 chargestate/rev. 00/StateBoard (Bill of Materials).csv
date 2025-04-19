@@ -1,0 +1,74 @@
+Bill Of Materials
+"Report Written:","Friday, April 18, 2025"
+"Project Path:","D:\Userdata\Documents\Laptop\01 PCB Design\06 chargestate\rev. 00\StateBoard.prj"
+"Design Path:","D:\Userdata\Documents\Laptop\01 PCB Design\06 chargestate\rev. 00\StateBoard.pcb"
+"Design Title:",""
+"Created:","25.08.2024 12:14:42"
+"Last Saved:","03.09.2024 23:11:47"
+"Editing Time:","492 min"
+"Units:","mm (precision 3)"
+
+
+"Components on Top Side"
+
+
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R3, R5",,"100k",,,,2
+"R4, R6-7",,"1k",,,,3
+"Sub-total:",,,,,,5
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"J1",,,,,,1
+"LED1-8","LW QH8G-Q2OO-3K5L-1",,,,,8
+"Q1","SQ2310CES-T1_GE3",,,,,1
+"Q2","BSS138LT3G",,,,,1
+"Q3","SQ2309CES-T1_GE3",,,,,1
+"S1","USLPT2819DT2TR",,,,,1
+"Sub-total:",,,,,,13
+
+"Totals for Top Side"
+
+,,,,,,"Quantity"
+,,,,,,18
+
+"Components on Bottom Side"
+
+
+
+"Capacitors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"C26-27, C36",,,"100nf",,,3
+"C28, C30",,,"10u",,,2
+"C29",,,"2.2u",,,1
+"Sub-total:",,,,,,6
+
+"Resistors"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"R1-2",,,,,,2
+"R8-15",,470,,,,8
+"Sub-total:",,,,,,10
+
+"Others"
+
+"Names","Part Number","Resistance","Capacitance","Voltage Rating","Precision","Quantity"
+"IC1","MIC5283-3.3YML-TR",,,,,1
+"IC3","ATTINY24A-MMH",,,,,1
+"J2",1775469-2,,,,,1
+"Sub-total:",,,,,,3
+
+"Totals for Bottom Side"
+
+,,,,,,"Quantity"
+,,,,,,19
+
+"Grand Totals"
+
+,,,,,,"Quantity"
+,,,,,,37

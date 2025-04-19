@@ -1,0 +1,5 @@
+ACTION=="add", SUBSYSTEM=="usb", DRIVER=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="0237", ATTR{bConfigurationValue}="0"
+ACTION=="add", SUBSYSTEM=="usb", DRIVER=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="0236", ATTR{bConfigurationValue}="0"
+sleep 0.1
+ACTION=="add", SUBSYSTEM=="usb", DRIVER=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="0237", ATTR{bConfigurationValue}="1"
+ACTION=="add", SUBSYSTEM=="usb", DRIVER=="usb", ATTR{idVendor}=="05ac", ATTR{idProduct}=="0236", ATTR{bConfigurationValue}="1"
