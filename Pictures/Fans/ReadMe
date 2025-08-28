@@ -1,0 +1,4 @@
+I added a second fan and heatsink to aid in cooling. I did this because I first used the 
+first gen Intel board, would probably not do this again. The second fan just takes the power 
+pwm from the first fan. The heatpipe is just a bend flat heatpipe soldered to a second fans
+heatsink.
