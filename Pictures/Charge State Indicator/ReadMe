@@ -1,0 +1,4 @@
+The chargestate indicator is mechanically just a copy of the macbook state indicator. Instead of 
+the way the original one works this is just a basic voltmeter measuring the battery voltage. 
+I had to add a capacitor and a resitor to one of the transistors that is not shown in the 
+designfiles.
