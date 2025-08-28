@@ -1,0 +1,8 @@
+The keyboard handler is a copy of apples design. Its just a USB input device with native 
+support on linux but not on windows. Due to some reason the trackpad wont work after being 
+turned off and on again, which is necessary as the circuit uses a lot of power in idle.
+This is also the reason the internal ports need port power control and why the rules given need
+to be added. They restart the keybaord after its "plugged in".
+The design uses the keyboard IC from the MacBook.
+If you want to copy this be aware of the fact that the different years of MacBook use slightly 
+different pinout on the IC.
