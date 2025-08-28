@@ -1,0 +1,12 @@
+The battery consists of two framework 55 wh batteries soldered together.
+As reprogramming the battery to accept the higher capacity would be a rather involved project
+instead I just replaced the 3 mOhm shunt resistor with a 1.5 mOhm shunt. This causes the battery
+to think its only drained half as fast and therefore accepts the higher capacity. Otherwise the
+laptop would just turn of at half capacity. 
+The three cables are the power cable, where I had to extend the original cable as the battery 
+connector and crimps anre not easily available, one power plug that exposes the battery voltage
+and ground and one SMBUS plug. I wanted to build a SMBUS charger but couldnt get it to get 
+recognized by the system so instead I build a dumb charger. This causes the laptop to not 
+recognize being charged. The chargestate is reported correctly but the OS doesnt show the battery
+being charged.
+The battery was then placed inside the hollowed out housing of a macbook battery.
