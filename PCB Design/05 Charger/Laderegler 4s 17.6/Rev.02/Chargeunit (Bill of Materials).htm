@@ -1,0 +1,478 @@
+<html>
+<head>
+<title>Bill Of Materials</title>
+<style>
+/*--- Style Sheet for BOM Composer -----------------------------------------*/
+
+/*--------------------------------------------------------------------------*/
+/* You can edit this style sheet, or take a copy and give it the same name  */ 
+/* as the template (.BCT) file for your own BOM Composer report. This is a  */
+/* standard CSS file so you should be able to tailor it to fit your own     */
+/* needs quite easily.                                                      */
+/*--------------------------------------------------------------------------*/   
+
+/*--- Base styles ----------------------------------------------------------*/
+
+* { font-family:Verdana,Tahoma,Arial,Times; font-size:8pt; color:#404040; }
+body { margin:0; }
+
+h2 { font-size:10pt; }
+h3 { font-size:9pt; }
+pre { font-family:Lucida Console,Courier New, Courier; }
+
+/*--- Headings -------------------------------------------------------------*/
+
+h2 { color:white; background-color:teal; width:700px; padding:5px; display:block; }
+h3 { width:700px; }
+
+/*--- Headings for particular sections in the report -----------------------*/
+
+h3.Side { color:teal; border-bottom:2px solid teal; }
+h3.Section { color:teal; }
+h3.Variant { background-color:#ccf; padding:5px; }
+
+/*--- Physical layout (controls page width) --------------------------------*/
+
+div.header { width:700px; }
+div.contents { padding:5px; }
+div.footer { padding:5px; }
+
+/*--- Hyperlinks -----------------------------------------------------------*/
+a:hover { color:#FF0000; }
+a.fixedlink { font-family:Lucida Console,Courier New, Courier; }
+a.link { }
+a.link:hover { color:#FF0000; }
+    
+/*--- Table settings -------------------------------------------------------*/
+table { width:700px; }
+td.ruledbelow { border-bottom:1px solid #eee; }
+td.ruledbelowheader { border-bottom:1px solid #a0d0d0; }
+td.ruledabovefooter { border-top:1px solid #a0d0d0; }
+td.ruledbelowfooter { border-bottom:1px solid #a0d0d0; }
+tr.evenrow { }
+
+/*--- Controlling widths of columns ----------------------------------------*/
+/* The class name (after the dot) is matched to your column heading         */
+
+td.component { width:40%; }
+td.names { width:25%; }
+td.value { width:15% }
+td.quantity { width:10%; }
+td.cost { width:10%; }
+
+/*--- Overrides when Printing ----------------------------------------------*/
+
+@media print{
+    a { text-decoration:none; color:#000; }
+}
+
+/*--- End Style Sheet for BOM Composer -------------------------------------*/
+</style>
+</head>
+<body oncontextmenu="return false;">
+<div class="header"></div>
+<div class="contents">
+<a name="$$TOP"></a><a name="TITLE"></a><h2>Bill Of Materials</h2>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top">Report Written:</td>
+   <td valign="top">Friday, April 18, 2025</td>
+  </tr>
+  <tr>
+   <td valign="top">Project Path:</td>
+   <td valign="top">D:\Userdata\Documents\Laptop\01 PCB Design\05 Charger\Laderegler 4s 17.6\Rev.02\Chargeunit Railgun.prj</td>
+  </tr>
+  <tr>
+   <td valign="top">Design Path:</td>
+   <td valign="top">D:\Userdata\Documents\Laptop\01 PCB Design\05 Charger\Laderegler 4s 17.6\Rev.02\Chargeunit Railgun.pcb</td>
+  </tr>
+  <tr>
+   <td valign="top">Design Title:</td>
+   <td valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+   <td valign="top">Created:</td>
+   <td valign="top">20.04.2024 00:01:16</td>
+  </tr>
+  <tr>
+   <td valign="top">Last Saved:</td>
+   <td valign="top">17.09.2024 19:10:39</td>
+  </tr>
+  <tr>
+   <td valign="top">Editing Time:</td>
+   <td valign="top">2207 min</td>
+  </tr>
+  <tr>
+   <td valign="top">Units:</td>
+   <td valign="top">mm (precision 3)</td>
+  </tr>
+</table>
+<br/><div id="bomtable">
+<a name="Top"></a><h3 class="Side">Components on Top Side</h3>
+<br/><a name="Capacitors"></a><h3 class="Section">Capacitors</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>Names</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>Part Number</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>Resistance</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>Capacitance</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>Voltage Rating</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>Precision</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C1-2, C9-10</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">10n</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">4</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C3-4, C6, C11, C15, C22</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">1u</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">6</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C5</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">2.2u</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C19</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">2.2u</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C20</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C21</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">1u</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>Sub-total:</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter ruledabovefooter" align="right"><b>14</b></td>
+  </tr>
+</table>
+<a name="Resistors"></a><h3 class="Section">Resistors</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>Names</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>Part Number</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>Resistance</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>Capacitance</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>Voltage Rating</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>Precision</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">R1</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">33R</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">R4-5</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">10k</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">2</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>Sub-total:</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter ruledabovefooter" align="right"><b>3</b></td>
+  </tr>
+</table>
+<a name="Others"></a><h3 class="Section">Others</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>Names</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>Part Number</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>Resistance</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>Capacitance</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>Voltage Rating</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>Precision</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">IC1</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">MAX1870AETJ+</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>Sub-total:</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter ruledabovefooter" align="right"><b>1</b></td>
+  </tr>
+</table>
+<a name="Totals"></a><h3 class="Section">Totals for Top Side</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter" align="right"><b>18</b></td>
+  </tr>
+</table>
+<a name="Bottom"></a><h3 class="Side">Components on Bottom Side</h3>
+<br/><a name="Capacitors"></a><h3 class="Section">Capacitors</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>Names</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>Part Number</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>Resistance</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>Capacitance</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>Voltage Rating</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>Precision</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">C7-8, C14, C16-18</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">6</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>Sub-total:</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter ruledabovefooter" align="right"><b>6</b></td>
+  </tr>
+</table>
+<a name="Resistors"></a><h3 class="Section">Resistors</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>Names</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>Part Number</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>Resistance</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>Capacitance</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>Voltage Rating</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>Precision</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">R2</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">R025</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">R3</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="resistance ruledbelow" align="left">R035</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>Sub-total:</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter ruledabovefooter" align="right"><b>2</b></td>
+  </tr>
+</table>
+<a name="Others"></a><h3 class="Section">Others</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>Names</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>Part Number</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>Resistance</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>Capacitance</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>Voltage Rating</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>Precision</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">D5-8</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">SSA34HE3_A/I</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">4</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">F1-2</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">SF-0603SP800R-2</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">2</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">IC3</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">SI4564DY-T1-GE3</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">IC4</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">RT9058-33GV</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">J1, J4</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">208294-0040</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">2</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">J2</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">208294-0020</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow" align="left">L2</td>
+   <td valign="top" class="partnumber ruledbelow" align="left">CDRH104RNP-100NC</td>
+   <td valign="top" class="resistance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="capacitance ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="voltagerating ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="precision ruledbelow" align="left">&nbsp;</td>
+   <td valign="top" class="quantity ruledbelow" align="right">1</td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>Sub-total:</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter ruledabovefooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter ruledabovefooter" align="right"><b>12</b></td>
+  </tr>
+</table>
+<a name="Totals"></a><h3 class="Section">Totals for Bottom Side</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter" align="right"><b>20</b></td>
+  </tr>
+</table>
+<a name="Totals"></a><h3 class="Section">Grand Totals</h3>
+<table cellpadding="2" cellspacing="0">
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowheader" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowheader" align="right"><b>Quantity</b></td>
+  </tr>
+  <tr>
+   <td valign="top" class="names ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="partnumber ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="resistance ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="capacitance ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="voltagerating ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="precision ruledbelow ruledbelowfooter" align="left"><b>&nbsp;</b></td>
+   <td valign="top" class="quantity ruledbelow ruledbelowfooter" align="right"><b>38</b></td>
+  </tr>
+</table>
+</div>
+</div>
+<div class="footer"><table width="700" cellpadding="0" cellspacing="0"><td align="left"><!--img src="file://D:/Userdata/Documents/DesignSpark PCB 11.0/Report Templates\No1 Systems.jpg"--></td><td align="right"><!--img src="file://D:/Userdata/Documents/DesignSpark PCB 11.0/Report Templates\EasyPC.jpg"--></td></table>
+
+</div>
+</body></html>
