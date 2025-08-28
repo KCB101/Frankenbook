@@ -1,5 +1,6 @@
-The board for external ports has two main tasks:
-Holding the secondary fan and wifi card and
+The board for external ports has three main tasks:
+Holding the secondary fan and wifi card,
+passing through the wifi antennas and
 adding internal USB ports for the webcam and the keyboard.
 The internal USB ports have port power control to be able to turn of all devices during sleep.
 The first iteration used standard USB-C ports but they are too large and were replaced for that.
