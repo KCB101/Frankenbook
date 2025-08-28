@@ -1,0 +1,3 @@
+The charger is just a basic buck boost converter based on the MAX1870AETJ+ IC. 
+Its pretty much a copy of the reference design. It has the secondary use of the chargestate
+indicator being plugged into it.
