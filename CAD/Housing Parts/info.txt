@@ -1,0 +1,3 @@
+The housing parts were printed from stainless steel. These parts had to be ground and cut quite a bit, as can be seen in the pictures.
+The disk cover also warped during printing. Due to design rules from JLCPCB the holes had to be drilled out after printing. 
+This needed carbite drills due to the material hardness.
