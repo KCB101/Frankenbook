@@ -1,0 +1,6 @@
+The USB hub for the external ports is based on the USB5744. There is an additional Lan controller
+though that can only do 100 mbit/s. The USB c port is just passed through from the other side. 
+Both the USB-C port and the Lan port had to be ground down to fit into the case.
+If I were to do another iteration I would change the design so I dont have to cut the USB-C port. 
+There are also cuts on both sides of the USB-C port meant to bend the PCB but due to trace
+stability I cant bend it far enough to make a difference so I would remove them.
