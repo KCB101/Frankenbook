@@ -1,0 +1,7 @@
+All the USB-C plugs are set in in the PCB and have solder on the housing for mechanical strain
+release.
+The headphone jack is used from the Framework part that also contains the lid sensor. Its 
+connected using a longer flatband cable than the original and held in place with a piece of 
+PCB with screws soldered onto it.
+The covers for the firewire and lightning ports are held in place with a piece of copper with a
+nut soldered onto it for the external USB hub.
